@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 // import "./index.css";
 // import App from "./App";
 import BookList from "./components/booklist/booklist.component";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BookList />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <BookList />
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
